@@ -105,16 +105,22 @@ const Home = () => {
                 <button className={styles.Buttonrestart1} onClick={() => Dispatch(resetAllrecipes())}>Reset all recipes</button>
             </div>
             <div>
-
                 <div className={styles.recipes}>
-                    {currentRecipes?.map(recipes => {
-                        return <Recipes
-                            key={recipes.id}
-                            id={recipes.id}
-                            image={recipes.image}
-                            name={recipes.name}
-                            Diets={recipes.diets} />
-                    })}
+                    {currentRecipes.length === 0 ? (
+                        <div >
+                            <h1>No hay nada para mostrar por ahora, intenta más tarde :(</h1>
+                        </div>
+                    ) : (
+                        currentRecipes.map(recipes => (
+                            <Recipes
+                                key={recipes.id}
+                                id={recipes.id}
+                                image={recipes.image}
+                                name={recipes.name}
+                                Diets={recipes.diets}
+                            />
+                        ))
+                    )}
                 </div>
             </div>
 
