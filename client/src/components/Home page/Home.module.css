@@ -188,7 +188,7 @@
     }
 }
 
-@media (max-width: 922px) {
+@media (max-width: 1115px) {
     .recipes {
         display: flex;
         flex-direction: column;
@@ -197,7 +197,7 @@
     }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 581px) {
     .searchbarbutton {
         display: flex;
         flex-direction: column;
