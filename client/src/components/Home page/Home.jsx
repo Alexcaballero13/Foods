@@ -77,7 +77,7 @@ const Home = () => {
             </nav>
 
             <div className={styles.options}>
-                <h2 className={styles.Theh3}>What is the order that you want to see the info? </h2>
+                <h2 className={styles.Theh3}>Sort information as follows: </h2>
                 <h3 className={styles.Theh3}>By Health Score: </h3>
                 <select name="select" onChange={handleOrder} className={styles.Selects}>
                     <option value="">Select</option>
